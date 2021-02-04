@@ -4,8 +4,9 @@ import streams
 import json
 
 const
-  inPath  = "C:/Users/Esther O'Keefe/Downloads/enwiktionary-20210201-pages-articles.xml/enwiktionary-20210201-pages-articles.xml"
+  inPath = "C:/Users/Esther O'Keefe/Downloads/enwiktionary-20210201-pages-articles.xml/enwiktionary-20210201-pages-articles.xml"
   outPath = "./out.json"
+
 
 # Print a carriage return and then the given string and flush output, so we
 # don't have a new line every time we log something.
@@ -13,6 +14,7 @@ proc crPrintUpdate(s: string) =
   write(stdout, '\r')
   write(stdout, s)
   flushFile(stdout)
+
 
 # Get the actual Wikitext for this page.
 func getPageText(n: XmlNode): string =
@@ -23,51 +25,30 @@ func getPageText(n: XmlNode): string =
     return text.innerText()
 
 
+proc getLatinSection(s: string): string =
+  let idx = s.find("==Latin==")
+  assert idx != -1
+  var fin = s.find("----", start = idx)
+  if fin == -1:
+    return s[idx ..< s.len]
+  else:
+    return s[idx ..< fin]
+
+
 proc hasLatinEntry(n: XmlNode): bool =
   return n.getPageText().contains("==Latin==")
 
 
-proc countPages(path: string): int =
-  let f = newFileStream(path, fmRead)
-  var
-    line = ""
-    count = 0
-  echo ""
-  if f != nil:
-    while f.readLine(line):
-      if line.contains("<page>"):
-        inc count
-        crPrintUpdate fmt"Pages total: {count}"
-  return count
-
-
-proc countLatinPages(path: string): int =
-  let f = newFileStream(path, fmRead)
-  var
-    line = ""
-    count = 0
-  echo ""
-  if f != nil:
-    while f.readLine(line):
-      if line.contains("==Latin=="):
-        inc count
-        crPrintUpdate fmt"Latin pages: {count}"
-  return count
-
 when isMainModule:
 
-  let
-    numPages = countPages(inPath)
-    numLatinPages = countLatinPages(inPath)
-
-  echo "Num pages:       ", numPages
-  echo "Num latin pages: ", numLatinPages
+  # Grabbed from a previous run on the same data
+  const numLatinPages = 808_521
 
   var
-    inFile   = newFileStream(inPath, fmRead)
-    outFile  = newFileStream(outPath, fmWrite)
-    line     = ""
-    saving   = false
+    inFile = newFileStream(inPath, fmRead)
+    outFile = newFileStream(outPath, fmWrite)
+    line = ""
+    saving = false
     savedXml = ""
     outJson: JsonNode = parseJson("[]")
     pagesSaved = 0
@@ -75,30 +56,39 @@ when isMainModule:
   if not inFile.isNil():
     while inFile.readLine(line):
 
+      if pagesSaved == 1000:
+        break
+
       if line.contains("<page>"):
         saving = true
 
       if saving:
         savedXml.add(line)
-        savedXml.add('\n')
 
       if line.contains("</page>"):
         saving = false
         # Finish process
         let
           page = parseXml(savedXml)
-          title = page.child("title")
+          title = page.child("title").innerText
 
-        if page.hasLatinEntry():
-          let j = %* { "title": title.innerText, "content": page.getPageText() }
+        if (not title.startsWith("Wiktionary:")) and page.hasLatinEntry():
+          let
+            pageText = page.getPageText()
+            latinSection = pageText.getLatinSection()
+
+          let j = %* {
+            "title": title,
+            "content": latinSection
+          }
           outJson.add(j)
           inc pagesSaved
           let percent = (pagesSaved.float * 100.0 / numLatinPages.float)
-          crPrintUpdate fmt"{pagesSaved} ({percent}%)"
+          crPrintUpdate fmt"{pagesSaved} ({percent:>7.3f}%)"
 
         savedXml = ""
 
     inFile.close()
 
-    outFile.write($outJson)
+    outFile.write(outJson.pretty())
     outFile.close()
