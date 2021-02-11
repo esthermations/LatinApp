@@ -3,6 +3,8 @@ import strutils, strformat
 import streams
 import json
 
+import WikiText
+
 const
   inPath = "C:/Users/Esther O'Keefe/Downloads/enwiktionary-20210201-pages-articles.xml/enwiktionary-20210201-pages-articles.xml"
   outPath = "./out.json"
@@ -35,14 +37,20 @@ proc getLatinSection(s: string): string =
     return s[idx ..< fin]
 
 
+func getTitle(n: XmlNode): string =
+  return n.child("title").innerText
+
 proc hasLatinEntry(n: XmlNode): bool =
   return n.getPageText().contains("==Latin==")
 
+func shouldLoadPage(n: XmlNode): bool =
+  return n.hasLatinEntry() and
+         not n.getTitle().startsWith("Wiktionary:")
 
 when isMainModule:
 
   # Grabbed from a previous run on the same data
-  const numLatinPages = 808_521
+  const numLatinPages = 808_502
 
   var
     inFile = newFileStream(inPath, fmRead)
@@ -56,7 +64,7 @@ when isMainModule:
   if not inFile.isNil():
     while inFile.readLine(line):
 
-      if pagesSaved == 1000:
+      if pagesSaved == 10_000:
         break
 
       if line.contains("<page>"):
@@ -64,23 +72,23 @@ when isMainModule:
 
       if saving:
         savedXml.add(line)
+        savedXml.add('\n')
 
       if line.contains("</page>"):
         saving = false
         # Finish process
-        let
-          page = parseXml(savedXml)
-          title = page.child("title").innerText
+        let page = parseXml(savedXml)
 
-        if (not title.startsWith("Wiktionary:")) and page.hasLatinEntry():
+        if shouldLoadPage(page):
           let
             pageText = page.getPageText()
-            latinSection = pageText.getLatinSection()
+            latinSection = pageText.getLatinSection().processWikiText()
 
           let j = %* {
-            "title": title,
+            "title": page.getTitle(),
             "content": latinSection
           }
+
           outJson.add(j)
           inc pagesSaved
           let percent = (pagesSaved.float * 100.0 / numLatinPages.float)
