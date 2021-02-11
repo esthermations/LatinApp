@@ -15,15 +15,12 @@ var
 
 proc search(s: cstring): cstring =
   assert jsonData != nil
-  for page in jsonData:
-    if s == page{"title"}.getStr():
-      return page{"content"}.getStr().cstring
-  return "No results!"
+  return jsonData{$s}.getStr()
 
 proc onSearchInput() {.exportc.} =
   assert searchBox != nil
   var searchString = searchBox.value
-  resultBox.innerText = search(searchString)
+  resultBox.innerHTML = search(searchString)
 
 # Entry point for the whole .... thing
 proc onPageLoad() {.exportc.} =

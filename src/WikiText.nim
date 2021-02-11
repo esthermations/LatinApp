@@ -6,6 +6,7 @@ const desiredSectionHeaders = [
   "Verb",
   "Adverb",
   "Participle",
+  "Pronoun",
 ]
 
 func getHeaderName(s: string): string =
@@ -32,42 +33,29 @@ func shouldBeDeleted(s: string): bool =
 #   2. the number of expected matches (for matches.len)
 #   3. the final format string
 
-func laNoun(line: string): string =
-  const pattern = re"{{la-noun\|(.+)<([1-4])>}}"
-  var matches: array[2, string]
-  if s.match(pattern = pattern, matches = matches):
-    return fmt"{mathes[0]} ({matches[1]} declension)\n"
-  else:
-    return line
+type WiktionaryTemplateKind = enum
+  Noun,
+  Verb,
+  VerbForm,
+  Adverb,
+  PartForm,
+  PronounForm,
 
-func doReplacements(s: string): string =
-  for r in replacements:
-    if r.shouldReplace(s):
-      return r.replace(s)
-  # Base case: no replacements are valid, just return the line.
-  return s
+let
+  # Regex patterns for extracting macronised words from WikiText templates
+  templatePatterns = [
+    Noun: re"{{la-noun\|(.+)<[1-4]>}}",
+    Verb: re"{{la-verb\|[^\|]+\|(.+)}}",
+    VerbForm: re"{{la-verb-form\|(.+)}}",
+    Adverb: re"{{la-adv\|([^\|]+)(?:}}|\|-}})",
+    PartForm: re"{{la-part-form\|(.+)}}",
+    PronounForm: re"{{la-pronoun-form\|(.+)}}",
+  ]
 
-
-# These take the form {{la-noun|macronised_spelling<declension>}}
-# {{la-noun|fābella<1>}}
-
-
-# {{la-adv|grātīs|-}}
-
-func processWikiText*(s: string): string =
-  var
-    deleting = false
-    output = ""
-  for line in s.splitLines(keepEol = true):
-    if line.isSectionHeader():
-      # Start deleting if we're starting an undesired section
-      deleting = not line.isDesiredHeader()
-
-    if deleting or line.shouldBeDeleted():
-      continue # Don't add the line to the output
-    else:
-      output.add(line.doReplacements())
-
-  return output
-
-
+proc getMacronisation*(latinSection: string): string =
+  for line in latinSection.splitLines():
+    for pattern in templatePatterns:
+      if line.match(pattern):
+        var matches: array[1, string]
+        discard line.match(pattern = pattern, matches = matches)
+        return matches[0]

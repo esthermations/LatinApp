@@ -45,7 +45,8 @@ proc hasLatinEntry(n: XmlNode): bool =
 
 func shouldLoadPage(n: XmlNode): bool =
   return n.hasLatinEntry() and
-         not n.getTitle().startsWith("Wiktionary:")
+         not n.getTitle().startsWith("Wiktionary:") and
+         not n.getTitle().startsWith("Reconstruction:")
 
 when isMainModule:
 
@@ -58,14 +59,11 @@ when isMainModule:
     line = ""
     saving = false
     savedXml = ""
-    outJson: JsonNode = parseJson("[]")
+    outJson: JsonNode = parseJson("{}")
     pagesSaved = 0
 
   if not inFile.isNil():
     while inFile.readLine(line):
-
-      if pagesSaved == 10_000:
-        break
 
       if line.contains("<page>"):
         saving = true
@@ -82,14 +80,14 @@ when isMainModule:
         if shouldLoadPage(page):
           let
             pageText = page.getPageText()
-            latinSection = pageText.getLatinSection().processWikiText()
+            macronised = pageText.getLatinSection().getMacronisation()
+            # latinSection = pageText.getLatinSection().processWikiText()
 
-          let j = %* {
-            "title": page.getTitle(),
-            "content": latinSection
-          }
 
-          outJson.add(j)
+          if macronised.len == 0 or page.getTitle().len == 0:
+            discard
+          else:
+            outJson[page.getTitle()] = %macronised
           inc pagesSaved
           let percent = (pagesSaved.float * 100.0 / numLatinPages.float)
           crPrintUpdate fmt"{pagesSaved} ({percent:>7.3f}%)"
