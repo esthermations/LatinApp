@@ -1,6 +1,11 @@
 # LatinApp
 
-... working title.
+## Features
 
-The plan is to provide a very fast web interface for getting conjugation and
-macronisation info about Latin words, using data from Wiktionary.
+ * Displays macronisation of Latin words as you type them
+
+## To-do
+
+ * Display a short definition
+ * Handle macronisation of multiple senses, e.g. Rōma vs. Rōmā
+ * Generate conjugations and declensions on-the fly to reduce page load
