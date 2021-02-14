@@ -2,13 +2,75 @@
 <html>
 
 <head>
+
   <style>
+    .content {
+      max-width: 500px;
+      margin: auto;
+      background-color: beige;
+      text-align: center;
+    }
+
+    .contentBorder {
+      max-width: 520px;
+      margin: auto;
+      background-color: burlywood;
+      text-align: center;
+    }
+
+    .button {
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: black;
+      background-color: lavender;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:hover {
+      background-color: plum;
+    }
+
+    .button:active {
+      background-color: plum;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .button:disabled {
+      cursor: default;
+      background-color: #AAA;
+      box-shadow: 0 0 0;
+    }
+
+    .result {
+      color: black;
+      font-size: 32pt;
+    }
+
+    .noResult {
+      color: #999;
+      font-size: 32pt;
+      font-style: italic;
+    }
+
     body {
-      font-size: 92pt;
+      background-color: gainsboro;
+      font-size: 30pt;
       font-family: 'Libre Baskerville', sans-serif;
       font-variant-ligatures: historical-ligatures;
     }
+
+    h1 {
+      font-size: 40pt;
+      font-family: 'Libre Baskerville';
+    }
   </style>
+
   <meta charset="utf-8" />
   <title>LatinApp</title>
   <script id="jsonData" src="./out.json" type="application/json"></script>
@@ -16,8 +78,19 @@
 </head>
 
 <body onload="onPageLoad();">
-  <input type="text" id="searchBox" oninput="onSearchInput();"></input>
-  <div id="resultBox">Results will show here!</div>
+
+  <div class="contentBorder">
+    <div class="content">
+
+      <h1>Macrōnātrum Esthēris</h1>
+
+      <button class="button" id="loadButton" onclick="onLoadButtonPressed();">
+      </button>
+      <br>
+      <input type="text" id="searchBox" oninput="onSearchInput();"></input>
+      <div id="resultBox"></div>
+    </div>
+  </div>
 </body>
 
 </html>
