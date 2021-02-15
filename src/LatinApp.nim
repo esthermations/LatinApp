@@ -2,7 +2,8 @@ import
   dom,
   jsconsole,
   json,
-  strformat
+  strformat,
+  strutils
 
 
 const
@@ -17,20 +18,32 @@ var
 proc informUser(s: string) =
   console.log(s)
 
+proc wrapInDivClass(s: cstring, class: string): string =
+  return fmt"""<div class="{class}">{$s}</div>"""
+
 ### Search our JSON data for the given string
 proc search(s: cstring): cstring =
   assert jsonData != nil
   return jsonData{$s}.getStr()
 
+func purifyInput(s: cstring): cstring =
+  return cstring(multiReplace($s,
+      ("æ", "ae")
+    )
+  )
+
 ### Perform a search whenever the user enters a letter into the search box
 proc onSearchInput() {.exportc.} =
   assert searchBox != nil
-  var searchString = searchBox.value
+  var searchString = searchBox.value.purifyInput()
   var result = search(searchString)
   if result.len == 0:
-    resultBox.innerHTML = defaultResult
+    if searchString.len == 0:
+      resultBox.innerHTML = defaultResult
+    else:
+      resultBox.innerHTML = searchString.wrapInDivClass("noResult")
   else:
-    resultBox.innerHTML = fmt"""<div class="result">{$result}</div>"""
+    resultBox.innerHTML = result.wrapInDivClass("result")
 
 ### Parse JSON from the string in memory
 proc onLoadButtonPressed() {.exportc.} =

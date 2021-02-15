@@ -1,9 +1,14 @@
-import xmltree, xmlparser
-import strutils, strformat
-import streams
-import json
+import
+  xmltree,
+  xmlparser,
+  strutils,
+  strformat,
+  streams,
+  json,
+  unicode
 
-import WikiText
+import
+  WikiText
 
 const
   inPath = "C:/Users/Esther O'Keefe/Downloads/enwiktionary-20210201-pages-articles.xml/enwiktionary-20210201-pages-articles.xml"
@@ -49,7 +54,6 @@ func shouldLoadPage(n: XmlNode): bool =
          not n.getTitle().startsWith("Reconstruction:")
 
 when isMainModule:
-
   # Grabbed from a previous run on the same data
   const numLatinPages = 808_502
 
@@ -80,14 +84,17 @@ when isMainModule:
         if shouldLoadPage(page):
           let
             pageText = page.getPageText()
+            pageTitle = page.getTitle()
             macronised = pageText.getLatinSection().getMacronisation()
             # latinSection = pageText.getLatinSection().processWikiText()
+            shouldDiscard: bool =
+              macronised.len == 0 or
+              pageTitle.len == 0 or
+              macronised == pageTitle
 
+          if not shouldDiscard:
+            outJson[pageTitle] = %macronised
 
-          if macronised.len == 0 or page.getTitle().len == 0:
-            discard
-          else:
-            outJson[page.getTitle()] = %macronised
           inc pagesSaved
           let percent = (pagesSaved.float * 100.0 / numLatinPages.float)
           crPrintUpdate fmt"{pagesSaved} ({percent:>7.3f}%)"
