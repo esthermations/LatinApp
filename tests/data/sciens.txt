@@ -1,0 +1,36 @@
+==Latin==
+
+===Etymology===
+Present active participle of {{m|la|sciō||I can, know, understand}}.
+
+===Participle===
+{{la-part|sciēns|comp=scientior|sup=scientissimus|adv=scienter}}
+
+# [[knowing]], [[understanding]]
+# [[conscious]], [[aware]]
+# [[knowledgeable]], [[skilled]]
+# {{lb|la|figuratively|of a woman}} having [[sexual]] relations with a man.
+# {{lb|la|adjective equivalent to an adverb}} [[knowingly]], [[purposely]], [[consciously]]
+#* {{Q|la|Plautus|Amphitryon|2|2|661|quote=''An ille me tentat '''sciens'''?''|trans=Is he '''purposely''' testing me?}}
+
+====Declension====
+{{la-adecl|sciēns<3-P+>}}
+
+====Derived terms====
+* {{l|la|īnsciēns}}
+* {{l|la|omnisciēns}}
+* {{l|la|scientia}}
+
+====Descendants====
+* {{desc|it|sciente}}
+* {{desc|fro|escient}}
+* {{desc|osp|ciente}}, {{l|osp|esciente}}
+* {{desc|pt|ciente}}
+
+===References===
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:M&A}}
+{{C|la|Epistemology}}
+----

@@ -1,0 +1,11 @@
+==Latin==
+
+===Alternative forms===
+* {{l|la|iī}}
+
+===Verb===
+{{la-verb-form|īvī}}
+
+# {{inflection of|la|eō||1|s|perf|actv|indc}}
+
+----

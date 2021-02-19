@@ -1,0 +1,8 @@
+==Latin==
+
+===Participle===
+{{la-part-form|dormientēs}}
+
+# {{inflection of|la|dormiēns||nom|m//f|p}}
+# {{inflection of|la|dormiēns||acc|m//f|p}}
+# {{inflection of|la|dormiēns||voc|m//f|p}}

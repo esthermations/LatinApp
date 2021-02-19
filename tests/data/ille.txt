@@ -1,0 +1,153 @@
+==Latin==
+
+===Alternative forms===
+* {{alter|la|olle||for the pronoun; archaic}}
+
+===Etymology===
+From {{inh|la|itc-ola|olle|t=he, that}} (also ''ollus'', ''olla''), from {{der|la|ine-pro|*h₂ol-no-}} or {{m|ine-pro|*h₂l̥-no-}}, from {{m|ine-pro|*h₂el-|t=beyond, other}}. Cognate with Latin {{doublet|la|uls|t1=beyond|alius|t2=other|alter|t3=the other|notext=1}}; {{cog|xum|ulu|t=to that place}}, {{cog|cu|лани|t=last year|lit=in that (year)}}.
+
+Initial ''i-'' from ''o-'' has no parallel case and may be owing to contamination from {{m|la|is}}, {{m|la|iste}} or due to the palatalizing effect of ''l exilis''.
+
+===Pronunciation===
+* {{la-IPA|vul=1|eccl=yes}}
+* {{audio|la|la-cls-ille.ogg|Audio (Classical)}}
+
+===Determiner===
+{{la-det|ille<irreg+>}}
+
+# [[that]]; [[those]] {{i|in the plural}}
+#* 4th century, [[w:St Jerome|St Jerome]], [[w:Vulgate|Vulgate]], [[Tobit#Etymology 1|Tobit]] 3:24
+#*: {{ux|la|in '''illo''' tempore exauditae sunt preces amborum in conspectu gloriae summi Dei|at '''that''' time the prayers of them both were heard in the sight of the glory of the most high God}}
+
+====Descendants====
+* Romanian: ({{l|ro|ăl}}), {{l|ro|ăla}}, {{l|ro|aia}}, {{l|ro|ăia}}, {{l|ro|alea}}, {{l|ro|ăluia}}, {{l|ro|ăleia}}, {{l|ro|ălora}}.
+
+From eccu(m)/*''accu'' (from ''[[eccum]]'', from ''[[ecce]] eum'') + ''ille''
+{{top2}}
+* {{desc|an|aquel}}, {{l|an|aquer}}, {{l|an|aquell}}, {{l|an|aquella}}, {{l|an|aquera}}, {{l|an|aquela}}, {{l|an|aquel·la}}
+* {{desc|rup|atsel}}, {{l|rup|atsea}}, {{l|rup|atselj}}, {{l|rup|atseali}}
+* {{desc|ast|aquel}}~{{l|ast|aquelli}}, {{l|ast|aquella}}, {{l|ast|aquello}}, {{l|ast|aquellos}}, {{l|ast|aquelles}}
+* {{desc|ca|aquell}}, {{l|ca|aquella}}, {{l|ca|aquells}}, {{l|ca|aquelles}}
+* {{desc|dlm|col}}
+* {{desc|frp|celi}}, {{l|frp|cela}}, {{l|frp|celos}}, {{l|frp|celes}}, {{l|frp|celor}}
+* {{desc|fro|cil}} {{q|masculine singular and plural nominative case, variants in Picard Old French: [[chil]] or [[chiu]]}}, {{l|fro|cel}} {{q|Picard: [[chel]]}}, {{l|fro|ceus}} {{q|Picard: [[chiaus]], Eastern Old French: [[ciaus]]}}, {{l|fro|celes}} {{q|Picard: [[chele]]}}, {{l|fro|celui}} {{q|Picard: [[chelui]]}}
+** {{desc|frm|cel}}, {{l|frm|celle}}, {{l|frm|ceulx}}, {{l|frm|celles}}, {{l|frm|celuy}}
+*** {{desc|fr|celle}}, {{l|fr|ceux}}, {{l|fr|celui}}, {{l|fr|celei}} {{q|dialectal, Burgundy}}, {{l|fr|celeur}} {{q|dialectal, archaic}}
+** {{desc|roa-lor|ceil}}, {{l|roa-lor|ceille}}, {{l|roa-lor|ceils}}, {{l|roa-lor|ceilles}}, {{l|roa-lor|çaux}}, {{l|roa-lor|celles}}, {{l|roa-lor|cî}}
+** {{desc|nrf|chût}} {{q|partially}}, {{l|nrf|chelle}}, {{l|nrf|cheux}}, {{l|nrf|chelles}}
+** {{desc|pcd|chu}}, {{l|pcd|chèle}} {{q|Ponthieu Picard: [[chole]]}}, {{l|pcd|chieux}} {{q|Pas-de-Calais: [[chiaux]]}}, {{l|pcd|chèles}} {{q|Ponthieu Picard: [[choles]]}}
+* {{desc|fur|chel}}, {{l|fur|chê}}, {{l|fur|chei}}, {{l|fur|chês}}
+* {{desc|gl|aquel}}, {{l|gl|aquela}}, {{l|gl|aqueles}}, {{l|gl|aquelas}}
+* {{desc|ist|quil}}, {{l|ist|quila}}, {{l|ist|quii}}, {{l|ist|quille}}
+* {{desc|it|quello}}, {{l|it|quella}}, {{l|it|quelli}}, {{l|it|quelle}}, {{l|it|colui}}, {{l|it|colei}}, {{l|it|coloro}}
+* {{desc|lld|chël}}, {{l|lld|chëla}}, {{l|lld|chëi}}, {{l|lld|chëles}}
+* {{desc|nap|chillo}}, {{l|nap|chella}}, {{l|nap|chille}}, {{l|nap|chelle}}
+* {{desc|oc|aquel}}, {{l|oc|aquela}}, {{l|oc|aqueles}}, {{l|oc|aquelas}}
+* {{desc|pt|aquele}}, {{l|pt|aquela}}, {{l|pt|aquilo}}, {{l|pt|aqueles}}, {{l|pt|aquelas}}
+* {{desc|ro|acel}}, {{l|ro|acea}}, {{l|ro|acei}}, {{l|ro|acele}}, {{l|ro|acelui}}, {{l|ro|acelei}}, {{l|ro|acelor}}
+* {{desc|scn|chiddu}}, {{l|scn|chidda}}, {{l|scn|chiddi}}
+* {{desc|es|aquel}}, {{l|es|aquella}}, {{l|es|aquello}}, {{l|es|aquellos}}, {{l|es|aquellas}}
+* {{desc|vec|cuel}}, {{l|vec|cuelo}}
+{{bottom}}
+
+===Pronoun===
+{{head|la|pronoun|cat2=demonstrative pronouns|feminine|illa|neuter|illud}}''; {{glossary|demonstrative}} pronoun (pronominal)''
+
+# [[that]] [[one]]; [[that]] (thing); [[those]] [[one]]s {{i|in the plural}}; [[those]] (things); [[he]], [[she]], [[it]]
+# {{rfv-sense|la|cp. [[Talk:ille]]}} {{lb|la|Vulgar Latin}} [[he]], [[she]], [[it]] {{i|third-person personal pronoun}}
+
+====Descendants====
+{{top2}}
+* {{desc|an|el}}, {{l|an|er}}, {{l|an|ell}}, , {{l|an|ella}}, {{l|an|era}}, , {{l|an|els}}, {{l|an|ers}}, {{l|an|ells}}, , {{l|an|ellas}}, {{l|an|eras}}
+* {{desc|rup|el}}, {{l|rup|ea}}, {{l|rup|elj}}, {{l|rup|eali}}, {{l|rup|lui}}, {{l|rup|ljei}}, {{l|rup|lor}}, {{l|rup|ãlj}}, {{l|rup|li}}, {{l|rup|lã}}, {{l|rup|ãl}}, {{l|rup|u}}
+* {{desc|ast|él}}~{{l|ast|elli}}, {{l|ast|ella}}, {{l|ast|ello}}, {{l|ast|ellos}}, {{l|ast|elles}}, {{l|ast|ellas}}
+* {{desc|ca|ell}}, {{l|ca|ella}}, {{l|ca|ells}}, {{l|ca|elles}}, {{l|ca|llur}}
+* {{desc|dlm|jal}}, {{l|dlm|jala}}, {{l|dlm|jali}}, {{l|dlm|jale}}, {{l|dlm|louro}}
+* {{desc|frp|il}}, {{l|frp|ele}}, {{l|frp|ils}}, {{l|frp|eles}}, {{l|frp|lui}}, {{l|frp|lyé}}, {{l|frp|lor}}, {{l|frp|li}}
+* {{desc|fro|il}} {{q|masculine singular and plural pronoun}}, {{l|fro|ele}}, {{l|fro|lei}}, {{l|fro|li}}, {{l|fro|lui}}, {{l|fro|lor}}
+** {{desc|fr|il}}, {{l|fr|elle}}, {{l|fr|ils}}, {{l|fr|elles}}, {{l|fr|lui}}, {{l|fr|leur}}, {{l|fr|lei}} {{q|dialectal, Burgundy, Normandy}}
+*** Louisiana French : [[alle]]
+** {{desc|nrf|il}} {{q|masculine singular and plural pronoun}}, {{l|fro|alle}}, {{l|nrf|lei}}, {{l|nrf|li}}, {{l|nrf|leux}}
+* {{desc|fur|lui}}, {{l|fur|jê}}, {{l|fur|lôr}}
+* {{desc|ist|el}}, {{l|ist|gila}}, {{l|ist|luri}}
+* {{desc|it|egli}}, {{l|it|ella}}, {{l|it|lui}}, {{l|it|lei}}, {{l|it|loro}}, {{l|it|lo}}, {{l|it|la}}, {{l|it|li}}, {{l|it|le}}
+* {{desc|lld|ëi}}, {{l|lld|i}}
+* {{desc|nap|lloro}}, {{l|nap|llo}}/{{l|nap|'o}}, {{l|nap|lla}}/{{l|nap|'a}}, {{l|nap|lle}}/{{l|nap|'e}}
+* {{desc|gl|el}}, {{l|gl|ela}}, {{l|gl|eles}}, {{l|gl|elas}}
+* {{desc|oc|el}}, {{l|oc|ela}}, {{l|oc|eles}}, {{l|oc|elas}}
+* {{desc|pt|ele}}, {{l|pt|ela}}, {{l|pt|eles}}, {{l|pt|elas}}, {{l|pt|o}}, {{l|pt|a}}, {{l|pt|os}}, {{l|pt|as}}, {{l|pt|lhe}}, {{l|pt|lhes}}, {{l|pt|lo}}, {{l|pt|la}}, {{l|pt|los}}, {{l|pt|las}}, {{l|pt|no}}, {{l|pt|na}}, {{l|pt|nos}}, {{l|pt|nas}}
+* {{desc|ro|el}}, {{l|ro|ea}}, {{l|ro|ei}}, {{l|ro|ele}}, {{l|ro|lui}}, {{l|ro|ei}}, {{l|ro|lor}}, {{l|ro|îi}}, {{l|ro|le}}, {{l|ro|îl}}, {{l|ro|o}}
+* {{desc|rm|el}}, {{l|rm|ella}}, {{l|rm|els}}, {{l|rm|ellas}}, {{l|rm|lur}}
+* {{desc|scn|iddu}}, {{l|scn|idda}}, {{l|scn|iddi}}
+* {{desc|es|él}}, {{l|es|ella}}, {{l|es|ello}}, {{l|es|ellos}}, {{l|es|ellas}}, {{l|es|lo}}, {{l|es|la}}, {{l|es|los}}, {{l|es|las}}, {{l|es|le}}, {{l|es|les}}
+* {{desc|vec|eło}}/{{l|vec|elo}}, {{l|vec|eła}}, {{l|vec|ełe}}, {{l|vec|łore}}, {{l|vec|łori}}
+{{bottom}}
+
+===Article===
+{{head|la|article|definite}}
+
+# {{lb|la|Medieval Latin|Vulgar Latin}} [[the]]
+
+====Descendants====
+{{top2}}
+* {{desc|rup|-lu}}, {{l|rup|-a}}
+* {{desc|ast|el}}, {{l|ast|la}}, {{l|ast|lo}}, {{l|ast|los}}, {{l|ast|les}}, {{l|ast|las}}
+* {{desc|an|o}}, {{l|an|lo}}, {{l|an|ro}}, {{l|an|el}}, {{l|an|a}}, {{l|an|ra}}, {{l|an|la}}, {{l|an|os}}, {{l|an|ros}}, {{l|an|los}}, {{l|an|els}}, {{l|an|ers}}, {{l|an|es}}, {{l|an|as}}, {{l|an|ras}}, {{l|an|las}}, {{l|an|les}}
+* {{desc|roa-brg|lou}}
+* {{desc|ca|el}}, {{l|ca|lo}}, {{l|ca|la}}, {{l|ca|els}}, {{l|ca|los}},  {{l|ca|les}}
+* {{desc|roa-cha|lou}}
+* {{desc|dlm|el}}, {{l|dlm|la}}, {{l|dlm|i}}, {{l|dlm|le}}
+* {{desc|frp|lo}}, {{l|frp|la}}, {{l|frp|los}}, {{l|frp|les}}
+* {{desc|fro|li}} {{q|masculine nominative singular and plural article}}, {{l|fro|le}} {{q|masculine oblique singular article}}, {{l|fro|la}} {{q|feminine singular article}}, {{l|fro|les}} {{q|plural article}}, {{l|fro|lu}} {{q|Norman variant of ''le''}}, {{l|fro|lo}} {{q|Eastern Old French variant of ''le''}}
+** {{desc|fr|le}}, {{l|fr|la}}, {{l|fr|les}}
+** {{desc|roa-brg|le}}, {{l|roa-brg|lai}}, {{l|roa-brg|les}}, {{l|roa-brg|lou}} {{q|variant of ''le''}}
+** {{desc|roa-cha|lou}}, {{l|roa-cha|lai}}, {{l|roa-cha|les}}, {{l|roa-cha|lu}} {{q|Ardennese variant of ''lou''}}
+** {{desc|roa-lor|lo}}, {{l|roa-lor|lai}}, {{l|roa-lor|les}}
+** {{desc|nrf|le}}, {{l|nrf|la}}, {{l|nrf|les}}
+** {{desc|pcd|el}}
+** {{desc|wa|li}}, {{l|wa|les}}
+* {{desc|fur|il}}, {{l|fur|la}}, {{l|fur|i}}, {{l|fur|lis}}
+* {{desc|gl|o}}, {{l|gl|a}}, {{l|gl|os}}, {{l|gl|as}}
+* {{desc|ist|el}}, {{l|ist|la}}
+* {{desc|it|il}}, {{l|it|lo}}, {{l|it|la}}, {{l|it|i}}, {{l|it|gli}}, {{l|it|le}}
+* {{desc|lld|l}}, {{l|lld|la}}, {{l|lld|i}}
+* {{desc|nap|llo}}/{{l|nap|'o}}, {{l|nap|lla}}/{{l|nap|'a}}, {{l|nap|lle}}/{{l|nap|'e}}
+* {{desc|oc|lo}}, {{l|oc|la}}, {{l|oc|los}}, {{l|oc|las}}
+* {{desc|fro|li}}, {{l|fro|la}}, {{l|fro|les}}
+* {{desc|pt|o}}, {{l|pt|a}}, {{l|pt|os}}, {{l|pt|as}}
+* {{desc|ro|-l}} ({{l|ro|-ul}}), {{l|ro|-a}} ({{l|ro|-ua}}), {{l|ro|-i}}, {{l|ro|-le}}, {{l|ro|-lui}}, {{l|ro|-ei}}, {{l|ro|-lor}}
+* {{desc|rm|il}}, {{l|rm|la}}, {{l|rm|ils}}, {{l|rm|las}}
+* {{desc|scn|lu}}, {{l|scn|la}}, {{l|scn|li}}
+* {{desc|es|el}}, {{l|es|la}}, {{l|es|lo}}, {{l|es|los}}, {{l|es|las}}
+* {{desc|vec|el}}, {{l|vec|ła}}, {{l|vec|i}}, {{l|vec|łe}}
+{{bottom}}
+
+===Usage notes===
+* This demonstrative determiner/pronoun is used to refer to a person or thing, or persons or things, away from both speaker and listener. It contrasts with {{m|la|hic||this}}, which refers to people or things near the speaker, and {{m|la|iste||this/that}}, which refers to people or things near the listener.
+* As Latin had no person pronouns specifically meaning "he", "she" or "it", any of {{m|la|ille}}, {{m|la|iste}}, {{m|la|hic}} or (most frequently) {{m|la|is}} could assume that function. In Vulgar latin, {{m|la|ille}} weakened its meaning and frequently came to mean merely "the" (as a determiner) or "he/she/it" (as a pronoun). This is in fact the origin of {{cog|fr|le||the}} and {{m|fr|il||he}}, {{cog|es|el||the}} and {{m|es|él||he}}, etc. The original meaning of a far demonstrative was maintained when augmented with {{m|la|ecce}} or {{m|la|eccum}}, cf. {{cog|it|quello}}, {{cog|es|aquel}}.
+* In Classical usage, {{m|la|ille}} can have a secondary, appreciative function of casting the referent in a positive light: {{m|la|ille homō}} can mean "that (famous/renowned) man". The opposite, pejorative function is assumed by {{m|la|iste}}, and {{m|la|iste homō}} frequently means "that (no good) man". Such functions were not present in Vulgar Latin, and {{m|la|iste}} came to mean "this" (cf. {{cog|es|este}}, {{cog|pt|este}}).
+
+===Declension===
+{{la-adecl|ille<irreg+>}}
+
+===Derived terms===
+{{der3
+|la|eccille|illic
+|illim
+|ōlim
+}}
+
+===Related terms===
+{{la-correlatives}}
+
+===See also===
+* {{l|la|ūnus}}
+
+===References===
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:M&A}}
+* {{R:Sihler 1995}}
+
+----

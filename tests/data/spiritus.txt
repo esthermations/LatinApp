@@ -1,0 +1,87 @@
+==Latin==
+
+===Etymology===
+From {{suffix|la|spīrō|-tus|t1=I breathe; I blow, exhale, emit; I respire; I live; I am inspired; I show, express|id2=action noun}}, from {{der|la|ine-pro|*(s)peys-|t=to blow, breathe}}.
+
+===Pronunciation===
+* {{la-IPA|spīritus}}
+
+===Noun===
+{{la-noun|spīritus<4>}}
+
+# [[air]], [[breath]], [[breathing]]
+#* {{quote-book|la|title=Classicorum auctorum e Vaticanicis codicibus editorum tomus V.|location=Rome|year=1833|page=595|text='''Spīritūs''' sunt duo dasia et psile.}}
+#: {{syn|la|spīrātiō}}
+# [[light]] [[breeze]]
+# [[spirit]], [[ghost]]
+#* {{Q|la|Jerome|Vulgate|Genesis|1|2|quote=Terra [[autem]] erat [[inānis]] et [[vacuus|vacua]], et [[tenebrae]] erant super [[facies|faciem]] [[abyssus|abyssī]]: et [[spīritus]] Deī [[fero|ferēbātur]] super [[aqua|aquās]].|trans=And the earth was void and empty, and darkness was upon the face of the deep; and the '''spirit''' of God moved over the waters.}}
+# [[energy]]; [[courage]]
+# [[pride]], [[haughtiness]], [[arrogance]]
+
+====Declension====
+{{la-ndecl|spīritus<4>}}
+
+====Derived terms====
+{{col3|la
+|spīrituālis
+|spīritus asper
+|spīritus lēnis
+|spīritus mundī
+|spīritus sānctus
+}}
+
+====Related terms====
+{{col3|la
+|spīrābilis
+|spīrāculum
+|spīrāmen
+|spīrāmentum
+|spīrātiō
+|spīrātus
+|spīritālitā
+|spīritāliter
+|spīrō
+}}
+
+====Descendants====
+{{top3}}
+* {{desc|bor=1|sq|shpirt}}
+* {{desc|bor=1|ast|espíritu}}
+* {{desc|bor=1|cel-bry-pro|*spïrïd}}
+** {{desc|br|spered}}
+** {{desc|kw|spyrys}}
+** {{desc|cy|ysbryd}}
+* {{desc|bor=1|nl|spiritus}}
+* {{desctree|bor=1|fro|espirit}}
+* {{desc|bor=1|fur|spirt}}
+* {{desc|bor=1|de|Spiritus}}
+* {{desctree|bor=1|sga|spirut}}
+* {{desc|bor=1|it|spirito}}, {{desc|it|spirto|nolb=1}}
+* {{desc|unc=1|lld|spiert}}, {{desc|lld|spirt|nolb=1}} {{q|might be inherited}}
+* {{desc|bor=1|pro|esperit}}
+** {{desc|ca|esperit}}
+** {{desc|oc|esperit}}
+* {{desc|bor=1|roa-opt|espirito}}
+** {{desc|gl|espírito}}
+** {{desc|pt|espírito}}
+* {{desc|bor=1|ro|spirit}}, {{desc|ro|spiriduș|nolb=1}}
+* {{desc|unc=1|rm|spiert}}, {{desc|rm|spért|nolb=1}} {{q|might be inherited}}
+* {{desc|bor=1|sc|ispìritu}}
+* {{desc|bor=1|scn|spiritu|spìritu}}, {{desc|scn|spirdu|nolb=1}}
+* {{desc|bor=1|osp|espirtu}}, {{desc|osp|espirto|nolb=1}}
+** {{desctree|es|espíritu}}
+** {{desc|lad|איספיריטו|tr={{desc|lad|espirito|nolb=1}}}}, {{desc|lad|איספריטו|tr={{desc|lad|esprito|nolb=1}}|nolb=1}}
+* {{desc|bor=1|vec|spirito}}
+{{bottom}}
+
+===References===
+* {{R:FEW|120|195|spīritus}}
+* {{R:REW}}
+
+===Further reading===
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:du Cange}}
+* {{R:Gaffiot|page=1468}}
+* {{R:Georges|page=2764}}
+* {{R:M&A}}

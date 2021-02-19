@@ -1,0 +1,130 @@
+==Latin==
+
+===Pronunciation===
+* {{la-IPA|eō}}
+* {{audio|la|la-cls-eo.ogg|Audio (Classical)}}
+
+===Etymology 1===
+{{root|la|ine-pro|*h₁ey-}}
+From {{inh|la|itc-pro|*eō}}, from {{inh|la|ine-pro|*h₁éyti}}.
+
+====Verb====
+{{la-verb|irreg.p3inf|eō}}
+
+# {{lb|la|intransitive}} {{sense|to move oneself}} I [[go]], I [[move]] (myself) (any kind of animate or inanimate motion: [[walk]], [[ride]], [[sail]], [[fly]], etc.)
+#: {{syn|la|baetō|bētō|cēdō|gradior|vādō}}
+#:{{usex|la|Rōmānī '''īte''' domum!|Romans, '''go''' home!
+}}
+#: {{usex|la|Rōmānī '''iērunt''' domum.|The Romans '''have gone''' home.
+}}
+#* {{Q|la|{{w|Cicero|Marcus Tullius Cicero}}|{{w|Letters to Atticus|Epistulae ad Atticum}}|Epistula 14, 15|year=44 BCE|quote=nunc prorsus adsentior tuis litteris speroque meliora. quamquam istos ferre non possum qui, dum se pacem velle simulant, acta nefaria defendunt. sed non possunt omnia simul. ''incipit res melius '''ire''' quam putaram''. nec vero discedam nisi cum tu me id honeste putabis facere posse. Bruto certe meo nullo loco deero idque, etiam si mihi cum illo nihil fuisset, facerem propter eius singularem incredibilemque virtutem.|trans=As it is, I entirely agree with your letter and hope for better things: though I cannot stand those people who, while pretending to desire peace, defend unprincipled proceedings: but we can't have everything at once. ''It begins '''to go''' better than I had considered'', and of course I will not leave the country till you think I may do so with honour. Brutus certainly I will always be ready to serve at any time or place, and that I should have done, even if there were no ties between us, for the sake of his unparalleled and extraordinary character. }}
+#* {{Q|la|Cicero|Catiline|Oratio in Catilinam altera ad populum|15|quote=Est mihi tanti, Quirites, huius invidiae falsae atque iniquae tempestatem subire, dum modo a vobis huius horribilis belli ac nefarii periculum depellatur. Dicatur sane eiectus esse a me, dum modo '''eat''' in exsilium. Sed, mihi credite, '''non est iturus'''.|transauthor=Albert Clark|trans=I am not unwilling, O Romans, to endure this storm of false and unjust unpopularity as long as the danger of this horrible and nefarious war is warded off from you. Let him be said to be banished by me as long as he '''goes''' into banishment; but, believe me, '''he will not go'''.}}
+# {{sense|to move forward in space or time}} I [[advance]], I [[proceed]], I [[progress]]; I [[go forth]], I [[move forward]], I [[move]] [[onward]]
+#: {{syn|la|prōcēdō|prōdeō|prōgredior}}
+#* {{Q|la|{{w|Sallust|Gaius Sallustius Crispus}}|{{w|Jugurthine War|Bellum Jugurthinum}}|year=40 BCE|quote=(Purportedly quoting Gaius Marius): Verum non ita est; nam ubi se flagitiis dedecoravere turpissimi viri, bonorum praemia ''ereptum '''eunt'''''.|trans=These worthies, after disgracing themselves by a course of fast living, '''''proceed''' to preempt'' the rewards of virtue.}}
+# {{sense|to continue to move oneself as before}} I [[proceed]]; I [[carry on]], I [[go on]], I [[keep going]], I [[move along]], I [[move on]]
+# {{sense|to occur resultantly}} I [[happen]] as a [[consequence]]: I [[result]], I [[follow]]
+# {{gloss|with the supine}}: I [[make-ready]] for an action: I [[prepare]], I [[set about]]
+#* {{Q|la|{{w|Plautus|Titus Maccius Plautus}}|{{w|Rudens}}|Actus IV, scene vii|year=211 BCE|quote=DAEMONES: O Gripe, Gripe, in aetate hominum plurimae/fiunt trasennae, ubi decipiuntur dolis./atque edepol in eas plerumque esca imponitur:/quam si quis avidus poscit escam avariter, /decipitur in trasenna avaritia sua./ille qui consulte, docte atque astute cavet, /diutine uti bene licet partum bene. /''mihi istaec videtur praeda praedatum '''irier''', /ut cum maiore dote abeat quam advenerit.'' /egone ut quod ad me allatum esse alienum sciam, /celem? minime istuc faciet noster Daemones. /semper cavere hoc sapientis aequissimumst, /ne conscii sint ipsi malefici suis. /ego mihi cum ~ lusi nil moror ullum lucrum.|trans=}}
+# {{gloss|in [[periphrastic]] constructions}}, {{sense|suggesting intent with futurity}} I [[aim]], I [[intend]], I [[mean]]
+#* {{Q|la|{{w|Sallust|Gaius Sallustius Crispus}}|{{w|The Conspiracy of Catiline|De coniuratione Catilinae}}|52.12|year=~50 BCE|quote=Sint sane, quoniam ita se mores habent, liberales ex sociorum fortunis, ...; ne illi sanguinem nostrum largiantur et, dum paucis sceleratis parcunt, ''bonos omnis perditum '''eant'''''.|trans= "By all means, since it accords with the spirit of the times, let them play booty with the wealth of the allies, ...; but let them not make free with our blood, nor, while letting a few villains go scot free, '''''aim''' to bring all good citizens to confusion''.}}
+#* {{Q|la|{{w|Livy|Titus Livius}}|{{w|Ab Urbe Condita Libri}}|Liber xxviii, 41.2|year=9 BCE|quote=Si aut bellum nullum in Italia aut is hostis esset, ex quo victo nihil gloriae quaereretur, qui te in Italia retineret, etsi id bono publico faceret, simul cum bello materiam gloriae tuae '''''ire''' ereptum videri posset''.|trans=If there were no war on Italian soil, or if the enemy were one in whose defeat there would be no glory, the man who kept you in Italy (even though it were done for the good of the state) ''might appear '''to be intending''' to cut you off'' both from fighting and from a chance to win laurels.}}
+# {{lb|la|legal}} I go over to the opposing opinion or other side in voting: I [[accede]], I [[cross over]]
+#* {{Q|la|{{w|Livy|Titus Livius}}|{{w|Ab Urbe Condita Libri}}|Liber ix, 8, 11-15|year=9 BCE|quote=Quae ubi dixit, tanta simul admiratio miseratioque viri incessit homines ut modo vix crederent ilium eundem esse Sp. Postumium qui auctor tam foedae pacis fuisset; modo miserarentur quod vir talis etiam praecipuum apud hostes supplicium passurus esset ob iram diremptae pacis. ''Cum omnes laudibus modo prosequentes virum in sententiam eius pedibus '''irent''''', temptata paulisper intercessio est ab L. Livio et Q. Maelio tribunis plebis, qui neque exsolvi religione populum aiebant deditione sua, nisi omnia Samnitibus, qualia apud Caudium fuissent, restituerentur; neque se pro eo quod spondendo pacem servassent exercitum populi Romani poenam ullam meritos esse ; neque ad extremum, cum sacrosancti essent, dedi hostibus violarive posse.|trans=When he had finished speaking, such a thrill of astonishment, and at the same time of pity for the man, ran through the senate, that at first men could hardly believe it was the same Spurius Postumius who had been the author of a peace so shameful; and presently they were all compassion, to think that such a man should suffer what would be no ordinary punishment at the hands of enemies enraged by the rupture of the peace. ''As they were all '''crossing over''' to support his motion, with nothing but praises for his heroism'', Lucius Livius and Quintus Maelius, tribunes of the plebs, briefly endeavored to interpose their veto. The people, they said, could not be freed from their obligation by surrendering them, unless every advantage which the Samnites had possessed at Caudium were restored to them; moreover, they had merited no punishment for having preserved, by their pledge of peace, the army of the Roman people; nor, finally, seeing that they were sacrosanct, could they be surrendered to the enemy or violated.}}
+# {{lb|la|business}} I [[go for]]; I am [[sold]] at (a certain price) ''(confer {{l|la|vēneō}})''
+#* {{Q|la|{{w|Claudian|Claudius Claudianus}}|In Eutropium| ("Against Eutropius")|Liber I, Line 203|year=397 CE|quote=quidquid se Tigris ab Haemo dividit, hoc certa proponit merce locandum institor imperii, caupo famosus honorum. hic Asiam villa pactus regit; ille redemit coniugis ornatu Syriam; dolet ille paterna Bithynos mutasse domo. subfixa patenti vestibulo pretiis distinguit regula gentes: '''''tot''' Galatae, '''tot''' Pontus '''eat''', '''tot''' Lydia '''nummis'''...''|trans=All the country between the Tigris and Mount Haemus he exposes for sale at a fixed price, this huckster of empire, this infamous dealer in honours. This man governs Asia for the which his villa has paid. That man buys Syria with his wife’s jewels. Another repents of having taken Bithynia in exchange for his paternal mansion. Fixed above the open doors of his hall is a list giving the provinces and their prices: '''''so much''' for Galatia, for Pontus '''so much''', '''so much may buy one''' Lydia...''}}
+
+=====Conjugation=====
+Irregular, but similar to [[Appendix:Latin fourth conjugation|fourth conjugation]]. The third principal part {{m|la|iī}} occasionally appears as {{m|la|īvī}} in Plautus, but never in Cicero, Caesar, Sallust, or Livy. The perfect active infinitive and pluperfect subjunctive stem {{m|la|īsse}} occurs twice as {{m|la|iisse}} in the PHI corpus.<ref>Weiss, Michael. (2009) Outline of the Historical and Comparative Grammar of Latin, p. 429</ref>
+{{la-conj|irreg.p3inf|eō}}
+
+=====Derived terms=====
+{{der3|la
+|abeō
+|adeō
+|ambeō
+|circumeō
+|coeō
+|deeō
+|dispereō
+|exeō
+|īlicet
+|ineō
+|intereō
+|introeō
+|itus
+|nequeō
+|obeō
+|pereō
+|praetereō
+|prodeō
+|queō
+|redeō
+|subeō
+|trānsabeō
+|trānseō
+|vēneō
+}}
+
+=====Descendants=====
+{{desc-top}}
+* {{desc|an|ir}}
+* {{desc|ast|dir}} {{qualifier|in part}}
+* {{desc|dlm|zer}}
+* {{desc|ext|dir}}
+* {{desc|fr|aller}} {{qualifier|in part: future tense only, form "ir-"}}, {{l|fr|vader}} {{qualifier|in part}}
+* {{desc|gl|ir}} {{qualifier|in part}}
+* {{desc|ist|zì}}
+* {{desc|it|gire}}, {{l|it|ire}}
+* {{desc|lld|jì}}, {{l|lld|jir}} {{qualifier|in part}}
+* {{desc|roa-leo|dire}}
+* {{desc|mwl|ir}}
+* {{desc|nap|ji}}, {{l|nap|jì}}, {{l|nap|ghì}}, {{l|nap|i}}
+* {{desc|pt|ir}} {{qualifier|in part}}
+* {{desc|ro|ii}}
+* {{desc|rm|ir}}, {{l|rm|eir}} {{qualifier|in part}}
+* {{desc|scn|jiri}}
+* {{desc|es|ir}} {{qualifier|in part}}
+{{desc-bottom}}
+
+=====Further reading=====
+* {{R:L&S|eo|eo1}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:M&A}}
+
+===Etymology 2===
+Declined from {{m|la|is}}. Somewhere it stands as if for ''eō locō/tempore'' ("this/that place/time, there, till"), somewhere it stand as if for ''eō modō'' ("this/that mode/way, thus"). Compare {{m|la|eā}}.
+
+====Adverb====
+{{la-adv|eō|-}}
+
+# {{lb|la|with abl. or loc.}} [[there]], in that [[place]].
+# {{lb|la|with abl. or [[quod#Latin|quod]]}} [[therefore]], [[because]], for that [[reason]].
+# {{lb|la|with [[quo#Latin|quo]], of quantity}} [[so much]], by so much. (= {{m|la|tantō}}...{{m|la|quantō}})
+# {{lb|la|with dative, of motion}} [[to]] that place, [[thither]].
+# {{lb|la|with dative, of tendency}} [[to that end]], with that [[purpose]].
+# {{lb|la|with dative, of time}} [[until]], [[so long]], [[up to]] that [[time]].
+
+====Derived terms====
+* {{l|la|ideō}}
+
+====Related terms====
+{{la-correlatives}}
+
+=====Further reading=====
+* {{R:L&S|eo|eo2}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:M&A}}
+
+===Etymology 3===
+{{nonlemma}}
+
+====Pronoun====
+{{la-pronoun-form|eō}}
+
+# {{inflection of|la|is||abl|m//n|s}}
+
+===References===
+<references />

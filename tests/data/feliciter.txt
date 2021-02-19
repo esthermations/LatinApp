@@ -1,0 +1,30 @@
+==Latin==
+
+===Alternative forms===
+* {{alter|la|foelīciter||medieval}}
+
+===Etymology===
+From {{suffix|la|fēlīx|iter|gloss1=fruitful, happy}}.
+
+===Pronunciation===
+* {{la-IPA|fēlīciter}}
+
+===Adverb===
+{{la-adv|fēlīciter}}
+
+# [[happily]]
+# [[favorably]], [[fortunately]]
+# [[abundantly]]
+
+====Related terms====
+* {{l|la|fēlīcitās}}
+* {{l|la|fēlīcitō}}
+* {{l|la|fēlīx}}
+
+===References===
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+
+===Further reading===
+* [https://web.archive.org/web/20060211204513/http://snow.prohosting.com/sprach/latin/lessons/45.htm Lesson 45] from the [https://web.archive.org/web/20060118045550/http://snow.prohosting.com/sprach/latin/ Latin course] for the Virtual School of Languages. ''See exercise at bottom of page.''

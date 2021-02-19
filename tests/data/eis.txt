@@ -1,0 +1,12 @@
+==Latin==
+
+===Pronunciation===
+* {{la-IPA|eīs}}
+
+===Pronoun===
+{{la-pronoun-form|eīs}}
+
+# {{inflection of|la|is||dat|p}} ([[ea]], [[id]])
+# {{inflection of|la|is||abl|p}} ([[ea]], [[id]])
+
+----

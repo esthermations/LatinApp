@@ -1,0 +1,61 @@
+==Latin==
+
+===Etymology===
+There are some theories:
+* Roman mythology derived the name from {{m|la|Rōmulus}}, name of the legendary founder and first king.
+
+* The word may derive from "Rumon" or "Rumen", an archaic name for the [[Tiber]] river related to the Indo-European root {{der|la|ine-pro|*srew-||to flow}}.
+
+* The word may be of {{bor|la|ett|-}} origin, as {{m|ett|𐌓𐌖𐌌𐌀}} was one of the Etruscan {{m|la|gens|gentes}}, from {{m|ett|*𐌓𐌖𐌌||teat}}.
+
+* From {{bor|la|grc|-}} word {{m|grc|ῥόμη|lit=strength}}; see {{m|grc|ῥώννυμι}}.
+
+===Pronunciation===
+* {{la-IPA|eccl=yes|Rōma}}
+
+===Proper noun===
+{{la-proper noun|Rōma<1.loc>}}
+
+# {{place|la|ancient capital|empire/Roman Empire|;|capital city|of modern-day|c/Italy|t1=Rome}}
+#: {{ux|la|Ut '''Roma''' iugum omnibus terris imponeret.|That '''Rome''' might overcome all countries.}}
+#: {{ux|en|Venit '''Roma'''.|He came from '''Rome'''.}}
+# The Roman Empire ''[[per se]]'' (as a [[synecdoche]]).
+# {{lb|la|Late Latin}} Rome and/or [[Constantinople]] (the latter as "Nova Roma").
+# {{lb|la|Ecclesiastical Latin|poetic}} The [[Roman Catholic Church]] in general.
+
+====Declension====
+{{la-ndecl|Rōma<1.loc>}}
+
+====Derived terms====
+* {{l|la|rōmānicus}}
+* {{l|la|rōmānus}}
+
+====Related terms====
+* {{l|la|Rōmulus}}
+
+====Descendants====
+* {{desc|it|Roma}}
+* {{desctree|fro|Rome}}
+* {{desc|pro}}
+** {{desc|oc|Roma}}
+** {{desc|ca|Roma}}
+* West Iberian
+** {{desctree|roa-opt|Roma}}
+** {{desc|es|Roma}}
+* {{desc|scn|Ruma}}, {{l|scn|Roma}}
+
+; Borrowings
+* {{desc|grc|Ῥώμη}} {{see desc}}
+* {{desc|ar|روما|tr=rūmā}}
+* {{desc|gem-pro|*Rūmō}} {{see desc}}
+* {{desc|he-mis|רומא}}
+** {{desc|he-IL|רומא|tr=róma}}
+* {{desc|sga|Róm}} {{see desc}}
+* {{desc|cy|Rhufain}}
+
+===References===
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+===Anagrams===
+* {{l|la|amor}}, {{l|la|armō}}, {{l|la|mora}}
+{{C|la|Historical polities}}
