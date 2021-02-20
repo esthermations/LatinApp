@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
   <style>
     .content {
       max-width: 500px;
@@ -49,12 +48,17 @@
 
     .result {
       color: black;
-      font-size: 32pt;
+      font-size: 20pt;
     }
 
     .noResult {
       color: #999;
-      font-size: 32pt;
+      font-size: 20pt;
+    }
+
+    .resultKind {
+      color: #999;
+      font-size: 16pt;
     }
 
     body {
@@ -72,16 +76,14 @@
 
   <meta charset="utf-8" />
   <title>LatinApp</title>
-  <script id="jsonData" src="./out.json" type="application/json"></script>
   <script src="../LatinApp.js"></script>
 </head>
 
 <body onload="onPageLoad();">
-
   <div class="contentBorder">
     <div class="content">
 
-      <h1>Macronātrum Esthēris</h1>
+      <h1>&#x1F994;<br> Macronātrum Esthēris</h1>
 
       <button class="button" id="loadButton" onclick="onLoadButtonPressed();">
       </button>

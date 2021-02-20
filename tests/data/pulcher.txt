@@ -1,0 +1,43 @@
+==Latin==
+
+===Alternative forms===
+* {{l|la|pulcer}}
+
+===Etymology===
+{{unknown|la}}. Possibly from earlier {{m|la|polcher}}, which according to Walde-Hoffman and Pokorny reflects {{der|la|ine-pro|*perḱ-||motley, variegated}}, with dissimilation {{m|ine-pro||*perḱ-ro-s}} > {{m|ine-pro||*pelḱ-ro-s}}, which would make it cognate to {{cog|sa|पृश्नि|tr=pṛ́śni}}. De Vaan<ref>{{R:itc:EDL|page=496}}</ref> rejects that connection as both irregular and semantically incompatible/tenuous, and assigns no known etymology.
+
+===Pronunciation===
+* {{la-IPA}}
+
+===Adjective===
+{{la-adj|pulcher/pulchr|comp=pulchrior|sup=pulcherrimus|adv=pulchrē}}
+
+# [[beautiful]], [[fair]], [[pretty]]
+#: {{syn|la|bellus|fōrmōsus}}
+# {{lb|la|figuratively}} [[noble]], [[honorable]], [[excellent]]
+
+====Declension====
+{{la-adecl|pulcher/pulchr}}
+
+====Derived terms====
+* {{l|la|pulchellus}}
+* {{l|la|pulchrālia}}
+* {{l|la|pulchrē}}
+* {{l|la|pulchritās}}
+* {{l|la|pulchritūdō}}
+
+====Descendants====
+* {{desc|ca|pulcre}}
+* {{desc|fr|poucre}} {{q|dialectal}}
+* {{desc|it|pulcro}}
+* {{desc|pt|pulcro}}
+* {{desc|es|pulcro}}
+
+===References===
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:Peck}}
+* {{R:Smith's Persons}}
+<references />
+{{C|la|Appearance}}

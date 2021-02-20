@@ -1,0 +1,106 @@
+==Latin==
+
+===Etymology===
+{{root|la|ine-pro|*(s)kreybʰ-}}
+From {{inh|la|itc-pro|*skreiβō}} (with scrīptus for *scriptus after scrīpsī), from {{der|la|ine-pro|*(s)kreybʰ-}}. Cognates include {{cog|grc|σκάριφος|sc=polytonic}}.
+
+===Pronunciation===
+* {{la-IPA|scrībō}}
+* {{audio|la|la-cls-scribo.ogg|Audio (Classical)}}
+
+===Verb===
+{{la-verb|3|scrībō|scrīps|scrīpt}}
+
+# I [[write]]
+
+====Conjugation====
+{{la-conj|3|scrībō|scrīps|scrīpt}}
+
+====Derived terms====
+{{der4|la
+|adscrībō
+|ascrībō
+|circumscrībō
+|cōnscrībō
+|contrāscrībō
+|dēscrībō
+|dīscrībō
+|exscrībō
+|īnscrībō
+|interscrībō
+|perscrībō
+|postscrībō
+|praescrībō
+|prōscrībō
+|rescrībō
+|scrīptus
+|subscrībō
+|superscrībō
+|trānscrībō
+}}
+
+====Related terms====
+{{rel4|la
+|scrība
+|scrībātus
+|scrīnium
+|scrīptilis
+|scrīptiō
+|scrīptiōnālis
+|scrīptitō
+|scrīptiuncula
+|scrīptor
+|scrīptōrium
+|scrīptōrius
+|scrīptula
+|scrīptum
+|scrīptūra
+|scrīptūriō
+|scrīptus
+}}
+
+====Descendants====
+* Eastern Romance:
+** {{desc|rup|scriu|scriu, scriiri|alts=1}}
+** {{desc|ro|scrie}}, {{l|ro|scriere}}
+* {{desc|co|scriva}}
+* {{desc|ist|screîvi|alts=1}}
+* {{desc|it|scrivere}}
+* {{desc|roa-oan}}
+** {{desc|an|escribir}}
+* {{desctree|fro|escrivre}}
+* {{desc|roa-ole}}
+** {{desc|ast|escribir}}
+** {{desc|ext|escrevil}}
+** {{desc|roa-leo|escribire}}
+** {{desc|mwl|screbir}}
+* {{desctree|pro|escriure}}
+* {{desctree|roa-opt|escrever}}
+* {{desc|osp|escrivir}}
+** {{desc|lad|eskrivir}}
+** {{desc|es|escribir}}
+* Rhaeto-Romance:
+** {{desc|fur|scrivi}}
+** {{desc|lld|scriver}}
+** {{desc|rm|scriver}}, {{l|rm|screiver}}
+* {{desc|sc|iscri}}, {{l|sc|iscribere}}, {{l|sc|iscriere}}, {{l|sc|iscriri}}, {{l|sc|iscrivere}}, {{l|sc|scriri}}
+* {{desc|scn|scrìviri}}
+* {{desc|vec|scrivar|alts=1}}
+* {{desc|bor=1|cel-pro|-}}
+** {{desc|cel-bry-pro|-}}
+*** {{desc|br|skrivañ}}
+*** {{desc|kw|skrifa}}
+*** {{desc|cy|ysgrifennu}}
+** {{desc|sga|scríbaid}}
+*** {{desc|ga|scríobh}}
+*** {{desc|gv|screeu}}
+*** {{desc|gd|sgrìobh}}
+* {{desctree|bor=1|gem-pro|*skrībaną}}
+
+===References===
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:M&A}}
+* {{R:Sihler 1995}}
+{{C|la|Writing}}

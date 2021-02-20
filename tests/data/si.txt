@@ -1,0 +1,77 @@
+==Latin==
+
+===Alternative forms===
+* {{alter|la|sei||standard in Republican spelling}}
+
+===Etymology===
+From {{inh|la|itc-pro|*sei||so, thus}} used in parataxis, likely via the meaning "in this" as the locative singular of {{der|la|ine-pro|*só||this, that}}; this older meaning is preserved in {{cog|la|sīc}} as well as in the oath {{m|la|sī dīs placet}}, c.f. English ''so help me God''. Related to {{m+|ang|sē||he, that}}.
+
+===Pronunciation===
+* {{la-IPA|sī|eccl=1}}
+* {{audio|la|la-cls-si.ogg|Audio (Classical)}}
+
+===Conjunction===
+{{head|la|conjunction|head=sī}}
+
+# [[if]], [[supposing]] that
+#: {{ux|la|'''Sī''' versūs hōrum duōrum poētārum neglegētis, magnā parte litterārum carēbitis.|'''If''' you neglect the verses of these two poets, you will miss a great part of literature.}}
+# [[whether]] {{gloss|when a verb of ''seeing'' or ''trying'' is the main verb in the apodosis; or when ''sī'' is used twice correlatively}}
+#: {{uxi|la|'''sī'''... '''sī'''|'''whether'''... '''or'''}}
+====Derived terms====
+{{col-top|3}}
+* {{l|la|sīc||so, thus}}
+* {{l|la|sīcut||as}}
+* {{l|la|sīs||if you will}}
+* {{l|la|sīve}} / {{l|la|seu||disjunctive ''sī''}}
+* {{l|la|sōdēs||if you will}}
+* {{l|la|ac sī||just as if}}
+* {{l|la|nisi||unless}}
+* {{l|la|quasi||as if, like}}
+* {{l|la|sī aliter|sī(n) aliter|if otherwise}}
+* {{l|la|sī dīs placet||expr. of indignant surprise}}
+* {{l|la|sīcubi||if anywhere}}
+* {{l|la|sīcunde||if from anywhere}}
+* {{l|la|sīn||if however}}
+* {{l|la|sī mē amās||please}}
+* {{l|la|sī minus||if not}}
+* {{l|la|sī modo||provided that}}
+* {{l|la|sī nōn||if not}}
+* {{l|la|sī̆ quandō||if ever}}
+* {{l|la|sī̆ quidem||if/since indeed}}
+* {{l|la|sī quis}} / {{l|la|sī quid||if anybody/anything}}
+* {{l|la|sī vīs||if you like}}
+* {{l|la|sī vīvō||as sure as I'm alive}}
+* {{l|la|sī nōndum||if not yet}}
+{{col-bottom}}
+
+====Descendants====
+{{top2}}
+* {{desc|rup|si}}
+* {{desc|ca|si}}
+* {{desc|frp|se}}
+* {{desc|fr|si}}
+* {{desc|fur|se}}
+* {{desc|gl|se}}
+* {{desc|pov|si}}
+* {{desc|it|se}}
+* {{desc|kea|si}}
+* {{desc|oc|se}}
+* {{desc|pap|si}}
+* {{desc|pt|se}}
+* {{desc|ro|să}}
+* {{desc|rm|sche}}
+* {{desc|scn|si}}
+* {{desc|es|si}}
+{{bottom}}
+
+===References===
+* [http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0059:entry=si si] in {{cite-book|author=Charlton T. Lewis and Charles Short|title=[[w:A Latin Dictionary|A Latin Dictionary]]|publisher=Clarendon Press|location=Oxford|year=1879}}
+* [http://www.perseus.tufts.edu/hopper/resolveform?type=exact&lookup=si&lang=latin si] in {{cite-book|author=Charlton T. Lewis|title=An Elementary Latin Dictionary|publisher=Harper & Brothers|location=New York|year=1891}}
+* {{R:du Cange}}
+* {{R:Gaffiot}}<!--
+* {{R:M&A}}-->
+* [http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0006:entry=si si] in {{cite-book|editor=Richard Stillwell et al.|title=The Princeton Encyclopedia of Classical Sites|publisher=Princeton University Press|location=Princeton, N.J.|year=1976}}
+* {{R:Sihler 1995}}
+* {{R:De Vaan 2008|sī, sīc|561}}
+
+----

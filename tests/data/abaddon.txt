@@ -1,0 +1,26 @@
+==Latin==
+
+===Etymology===
+Borrowed from {{bor|la|grc|Ἀβαδδών}}.
+
+===Pronunciation===
+* {{la-IPA|Abaddōn|eccl=yes}}
+
+===Proper noun===
+{{la-proper noun|Abaddōn|g=m|indecl=1}}
+
+# {{lb|la|Late Latin}} {{n-g|the {{l|en|name}} of}} the {{l|en|angel}} of {{l|en|Tartarus}}
+#* '''''ante'' AD 405''', anonymous revisor(s) of the ''{{w|Vetus Latina}}'', ''[[w:Vulgate|Biblia Sacra Vulgatae Editionis]]'', [[w:Book of Revelation|Apocalypsis]] [http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0060:book=Apocalypse:chapter=9:verse=11 9:11]:
+#*: {{quote|la|et habebant super se regem angelum abyssi cui nomen hebraice '''Abaddon''' graece autem Apollyon et latine habet nomen Exterminans|3=And they had over them a king, the angel of the bottomless pit; whose name in Hebrew is '''Abaddon''', and in Greek Apollyon; in Latin Exterminans. <small>― [http://www.drbo.org/x/d?b=drb&bk=73&ch=9&l=11#x ''Douay–Rheims'' translation]</small>}}
+
+====Synonyms====
+* {{l|la|Apollȳōn}}, {{l|la|Extermināns}}
+
+====Descendants====
+* {{desc|bor=1|de|Abaddon}}
+* {{desc|bor=1|enm|Abadon}}, {{l|enm|Abbadon}}, {{l|enm|Labadon}}, {{l|enm|Laabadon}}
+** {{desc|en|Abaddon}}
+* {{desc|bor=1|es|Abadón}}
+
+===References===
+* {{R:L&S}}

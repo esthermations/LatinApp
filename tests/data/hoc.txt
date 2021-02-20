@@ -1,0 +1,56 @@
+==Latin==
+
+===Etymology 1===
+From Old Latin ''hoc'', ''hocc'', from *''hod-ce'', from {{inh|la|itc-pro|*hod}}, neuter nominative/accusative singular of {{m|itc-pro|*ho||this}}, from [[Proto-Indo-European]] {{m|ine-pro|*gʰe}} + Proto-Indo-European {{m|ine-pro|*ḱe||here}}.
+
+====Pronunciation====
+* {{la-IPA|hoc}}
+* Note: before a vowel, the final [k] is always doubled in poetry, e.g. using Classical pronunciation, ''hoc est'' [hɔkk ɛst]. W. Sydney Allen also reports an attested ancient ''occest''. Contrast {{l|la|hic}}, which can be [hɪk ɛst] or [hɪkk ɛst] in this position.
+
+=====Determiner=====
+{{la-det-form|hoc}}
+
+# {{inflection of|la|hic||nom|n|s}}
+# {{inflection of|la|hic||acc|n|s}}
+
+====Descendants====
+* {{desc|frp|o}}, {{l|frp|ouè}} (from *''hoc ille'')
+* {{desc|fro|o}}, {{l|fro|ou}}, {{l|fro|oc}}, {{l|fro|ec}}, {{l|fro|euc}}, {{l|fro|uoc}}
+* {{desc|fro|oïl}} (from *''hoc ille''), {{l|fro|oje}} (from *''hoc ego'')
+** {{desc|fr|oui}}
+* Old Occitan: {{l|frp|oc}}
+** {{desc|oc|òc}}
+** {{desc|roa-oca|oc}}, {{l|roa-oca|hoch}}
+** {{desc|an|ó}}
+
+===Etymology 2===
+From the neuter ablative singular of {{m|la|hic}}.
+
+====Pronunciation====
+* {{la-IPA|hōc}}
+
+====Determiner====
+{{la-det-form|hōc}}
+
+# {{inflection of|la|hic||abl|m|s}}
+# {{inflection of|la|hic||abl|n|s}}
+# {{lb|la|with a comparative|correlative of quod}} for this [[reason]], [[because]] of this
+#*: {{Q|la|Cicero|Pro Fonteio|17|8|quote=...'''quō maius''' crīmen sit id quod ostendātur falsum, '''hōc maiōrem''' ab eō iniūriam fierī, quī id cōnfingat.|t=...'''the more''' serious the accusation which is shown to be false, '''the greater''' the offense committed by the fabricator.}}
+
+===Etymology 3===
+According to De Vaan (2008), from a masculine singular instrumental of {{inh|la|ine-pro||*gʰi-ḱe|this, here}}. Contrast {{noncog|la|hūc}}, which is probably from the locative instead.
+
+===Adverb===
+{{la-adv|hōc|-}}
+
+# [[hither]], to this place
+#: {{syn|la|hūc|hōrsum}}
+
+===References===
+* {{R:itc:EDL|hic, haec, hoc|284}}
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:M&A}}
+
+----

@@ -1,0 +1,12 @@
+==Latin==
+
+===Pronunciation===
+* {{la-IPA|gladiō}}
+
+===Noun===
+{{la-noun-form|gladiō|g=m}}
+
+# {{inflection of|la|gladius||dat|s}}
+# {{inflection of|la|gladius||abl|s}}
+
+----

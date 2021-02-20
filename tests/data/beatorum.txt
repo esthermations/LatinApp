@@ -1,0 +1,7 @@
+==Latin==
+
+===Adjective===
+{{la-adj-form|beātōrum}}
+
+# {{inflection of|la|beātus||gen|m|p}}
+# {{inflection of|la|beātus||gen|n|p}}

@@ -1,0 +1,103 @@
+==Latin==
+{{number box|la|1}}
+
+===Alternative forms===
+* Symbol: '''I'''
+
+===Etymology===
+From {{inh|la|itc-ola|oinos}}, from {{inh|la|itc-pro|*oinos}}, from {{inh|la|ine-pro|*óynos|t=one, single}}. Cognates include {{cog|grc|οἶος}}, {{cog|sa|एक|tr=éka}}, {{cog|cu|ѥдинъ}}, {{cog|sga|óen}}, and {{cog|ang|ān}} ({{cog|en|one}} and {{m|en|an}}).
+
+===Pronunciation===
+* {{la-IPA|eccl=yes|ūnus}}
+* {{audio|la|la-cls-unus.ogg|Audio (Classical)}}
+
+===Adjective===
+{{la-adj|ūnus<+.ius>}}
+
+# [[one]], [[single]]
+# [[alone]]
+
+===Numeral===
+{{la-num-adj|ūnus<+.ius>|type=card}}
+
+# {{cln|la|cardinal numbers}} [[one]]; 1
+#* {{Q|la|Ovid|Metamorphoses|6|644|thru=645|quote=satis illi ad fata vel '''unum''' vulnus erat: iugulum ferro Philomela resolvit|trans=Sufficient was this '''one''' wound to kill; but Philomela also cut open the throat}}
+#* {{Q|la|Jerome|Vulgate|Nehemiae|1|2|quote=et venit Anani '''unus''' de fratribus meis ipse et viri ex Iuda et interrogavi eos de Iudaeis qui remanserant et supererant de captivitate et de Hierusalem|trans=and Hanani came, '''one''' of my brethren, he and certain men of Judah; and I asked them concerning the Jews that had escaped, which were left of the captivity, and concerning Jerusalem}}
+#* '''6th c.''' — [[w:Boethius|Boethius]], ''[[s:la:Commentarium in librum Aristotelis Peri hermeneias primae editionis|Commentarium in librum Aristotelis Peri hermeneias primae editionis]]'', Book I, section 5
+#*: In summam igitur '''ūnārum''' ōrātiōnum aliae sunt significātiōne '''ūnae''', aliae coniūnctiōne.
+#*:: "In summary therefore, '''of one''' theme others are (by signification) '''one''', some with connections."
+
+====Usage notes====
+The plural forms are only used with pluralia tantum. For more information see [[Appendix:Latin cardinal numbers#ūnus|Appendix:Latin cardinal numbers]].
+
+====Declension====
+{{la-adecl|ūnus<+.ius>}}
+* Sg.gen. ''ūnī'', sg.dat. ''ūnō'', ''ūnae'' appear in earlier writers.
+
+====Derived terms====
+{{col-top|2}}
+* {{l|la|adūnō}}
+* {{l|la|ūnicus}}
+* {{l|la|ūniō}}
+* {{l|la|ūnitās}}
+* {{l|la|ūni-}}
+* {{l|la|ūnō}}
+{{col-bottom}}
+
+====Related terms====
+* {{l|la|nōn}}
+* {{l|la|ūllus}}
+
+===Article===
+{{head|la|article|head=ūnus}}
+
+# {{lb|la|Medieval Latin}} [[a]], [[an]]
+
+====Declension====
+{{la-adecl|ūnus<+.ius.sg>}}
+
+====Derived terms====
+* {{l|la|*alicūnus}} {{q|Vulgar Latin}}
+
+====Descendants====
+{{top2}}
+* Eastern Romance
+** {{desc|rup|unu}}, {{l|rup|un}}
+** {{desc|ro|unu}}, {{l|ro|un}}
+* {{desc|frp|yon}}, {{l|frp|un}}
+* Gallo-Italic
+** {{desc|egl|unu}}
+** {{desc|lmo|vun}}
+* Italo-Dalmatian
+** {{desc|co|unu}}
+** {{desc|dlm|join}}
+** {{desc|ist|ur}}
+** {{desc|it|uno}}, {{l|it|un}}
+** {{desc|nap|uno}}, {{l|nap|nu}}
+* {{desctree|fro|un}}
+* {{desc|pro|un}}
+** {{desc|ca|un}}
+** {{desc|oc|un}}
+* Rhaeto-Romance
+** {{desc|fur|un}}
+** {{desc|lld|un}}
+** {{desc|rm|in}}, {{l|rm|egn}}, {{l|rm|ün}}
+* {{desc|sc|unu}}
+* {{desc|vec|uno}}, {{l|vec|un}}, {{l|vec|on}}
+* West Iberian
+** {{desc|ast|unu}}
+** {{desc|mxi|-}}
+**: {{desc|mxi|ونه|tr=unu|sclb=1}}
+**: {{desc|mxi|ונו|tr=unu|sclb=1}}
+** {{desctree|roa-opt|ũu}}
+** {{desc|es|uno}}, {{l|es|un}}
+{{bottom}}
+
+===References===
+* {{R:L&S}}
+* {{R:Elementary Lewis}}
+* {{R:Gaffiot}}
+* {{R:M&A}}
+* {{R:NLW}}
+
+----

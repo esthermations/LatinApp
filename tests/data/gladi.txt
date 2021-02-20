@@ -1,0 +1,6 @@
+==Latin==
+
+===Noun===
+{{la-noun-form|gladi}}
+
+# {{inflection of|la|gladius||voc|s}}
