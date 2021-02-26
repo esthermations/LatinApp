@@ -7,12 +7,37 @@ import
   json
 
 import
-  WikiText,
   Util
 
 const
   inPath = "./ReducedWiktionary.xml"
   outPath = "./out.json"
+
+proc getWordTemplates*(latinSection: string): seq[string] =
+  const templatePatterns = [
+    "{{la-noun|",
+    # "{{la-noun-form",
+    "{{la-proper noun|",
+    "{{la-num-adj|",
+    "{{la-adj|",
+    # "{{la-adj-form",
+    "{{la-verb|",
+    # "{{la-verb-form",
+    "{{la-adv|",
+    "{{la-part|",
+    #"{{la-part-form",
+    # "{{la-pronoun-form",
+    "{{la-det|",
+    # "{{la-det-form",
+  ]
+  var ret: seq[string]
+  defer: return ret
+  for line in latinSection.splitLines():
+    for pattern in templatePatterns:
+      if line.strip().startsWith(pattern):
+        ret.add line.strip()
+
+
 
 when isMainModule:
   # Grabbed from a previous run on the same data
@@ -43,10 +68,9 @@ when isMainModule:
         let
           page = parseXml(savedXml)
           title = page.getTitle()
-          words = page.child("text").innerText.getWords()
+          words = page.child("text").innerText.getWordTemplates()
           shouldDiscard: bool =
-            words.len == 0 or
-            title.len == 0
+            words.len == 0 or title.len == 0
 
         if not shouldDiscard:
           outJson[title] = %words

@@ -1,14 +1,17 @@
 import
   dom,
-  jsconsole,
   json,
   strformat,
-  strutils
+  strutils,
+  tables
+
+import LatinWords
+import LatinWords/Types
 
 type
-  Word = object
+  SearchResult = object
     word: string
-    kind: string
+    desc: string
 
 const
   defaultResult = """<div class="noResult">nūlla resultāta</div>"""
@@ -17,59 +20,164 @@ var
   searchBox: InputElement
   resultBox: Element
   loadButton: Element
-  jsonData: JsonNode = nil
+  wikitextTemplateJson: JsonNode = nil
+  cachedResults = initTable[string, seq[SearchResult]]()
 
-proc informUser(s: string) =
-  console.log(s)
+func `$`(n: NounIdentifier): string =
+  return fmt"{$n.c} {$n.n} of {$n.nomSing}"
+
+func `$`(v: VerbIdentifier): string =
+  return fmt"{$v.m} {$v.v} {$v.a} {$v.n} {$v.p} of {$v.firstPrincipalPart}"
+
+func toSearchResult(w: WordForm): SearchResult =
+  case w.kind
+  of WordKind.Noun: return SearchResult(word: w.word, desc: $w.nounID)
+  of WordKind.Verb: return SearchResult(word: w.word, desc: $w.verbID)
+  else: return SearchResult(word: w.word, desc: "?")
+
 
 func wrapInDivClass(s: cstring, class: string): string =
   fmt"""<div class="{class}">{$s}</div>"""
 
-### Convert a JsonNode containing a Word to a Word type
-func jsonToWord(n: JsonNode): Word =
-  Word(word: n["w"].getStr(), kind: n["k"].getStr())
+func wordFormsToSearchResults(w: AllWordForms): seq[SearchResult] =
+  let dictionaryForm = getDictionaryForm(w)
+  var wordForms: seq[WordForm]
+  case w.kind
+  of WordKind.Unknown:
+    discard
+  of WordKind.Noun:
+    for n in Number:
+      for c in NounCase:
+        let
+          id = (dictionaryForm, n, c)
+          word = w.nounForms[n][c]
+        wordForms.add WordForm(word: word, kind: WordKind.Noun, nounID: id)
+  of WordKind.Verb:
+    for m in Mood:
+      for v in Voice:
+        for a in Aspect:
+          for n in Number:
+            for p in Person:
+              let
+                id = (dictionaryForm, m, v, a, n, p)
+                word = w.verbForms[m][v][a][n][p]
+              wordForms.add WordForm(word: word, kind: WordKind.Verb, verbID: id)
+
+  var ret: seq[SearchResult]
+  for wf in wordForms:
+    ret.add wf.toSearchResult()
+  return ret
+
+
+
+proc searchTemplateAndUpdateCache(t: cstring): seq[SearchResult] =
+  let
+    wordForms = getAllWordForms($t)
+    results = wordFormsToSearchResults(wordForms)
+
+  if wordForms.kind == WordKind.Unknown:
+    echo "Unknown word kind: ", $t
+    return @[]
+
+  defer:
+    let key = getDictionaryForm(wordForms).deMacronise()
+    echo "Key: ", $key
+    if cachedResults.hasKey(key):
+      echo "returning cached results!"
+      return cachedResults[key]
+    else:
+      echo "no cached results, returning nothing."
+      return @[]
+
+  for result in results:
+    echo "Working with result ", $result
+    let key = result.word.deMacronise()
+    if key.len > 0:
+      if cachedResults.hasKey(key):
+        cachedResults[key].add result
+      else:
+        cachedResults[key] = @[result]
+
 
 ### Search our JSON data for the given string
-proc search(s: cstring): seq[Word] =
-  assert jsonData != nil
-  let arr = jsonData{$s}
-  var ret: seq[Word]
-  for elem in arr:
-    ret.add elem.jsonToWord()
-  return ret
+proc search(s: cstring): seq[SearchResult] =
+  assert wikitextTemplateJson != nil
+
+  if cachedResults.hasKey($s):
+    echo "Returning cached result for ", $s
+    return cachedResults[$s]
+
+  # Otherwise, we need to create a result, if we can.
+
+  # If this word matches a WikiText template, generate results from that
+  # template.
+  var templates = wikitextTemplateJson{$s}
+
+  echo (
+    if templates == nil:
+    "No cached template results"
+  else:
+    "Templates: " & $templates
+  )
+
+  # No such template, and no such stored result, so try and guess a word form
+  # and see if we have a template for that.
+  #if templates == nil:
+  #  let wf = guessWordForm($s)
+  #  if wf.len == 0:
+  #    return @[]
+
+  #  # Otherwise, we have a word! Maybe.
+  #  for w in wf:
+  #    let word = getDictionaryForm(w).deMacronise()
+  #    let t = wikitextTemplateJson{word}
+  #    if t != nil:
+  #      templates &= t
+
+  if templates != nil:
+    var ret: seq[SearchResult]
+    for t in templates:
+      assert t != nil
+      ret &= searchTemplateAndUpdateCache(t.getStr())
+    return ret
+
+  return @[]
 
 func purifyInput(s: cstring): cstring =
   multiReplace($s, ("æ", "ae")).cstring
+
 
 ### Perform a search whenever the user enters a letter into the search box
 proc onSearchInput() {.exportc.} =
   assert searchBox != nil
   var searchString = searchBox.value.purifyInput()
-  var words = search(searchString)
+  var results = search(searchString)
   resultBox.innerHTML = ""
-  if words.len == 0:
+  if results.len == 0:
     if searchString.len == 0:
       resultBox.innerHTML = defaultResult
     else:
       resultBox.innerHTML = searchString.wrapInDivClass("noResult")
   else:
-    for word in words:
-      resultBox.innerHTML &=
-        wrapInDivClass(word.word, "result") &
-        wrapInDivClass(word.kind, "resultKind") &
-        "<br>"
+    var previousWord = ""
+    for result in results:
+      if result.word != previousWord:
+        resultBox.innerHTML &= "<br>" & wrapInDivClass(result.word, "result")
+      resultBox.innerHTML &= wrapInDivClass(result.desc, "resultDesc")
+      previousWord = result.word
 
 ### Parse JSON from the string in memory
 proc onLoadButtonPressed() {.exportc.} =
-  const jsonString = staticRead("../out.json")
+  const str = staticRead("../out.json")
   loadButton.disabled = true
-  jsonData = parseJson(jsonString)
+  wikitextTemplateJson = parseJson(str)
   loadButton.innerHTML = "Factum!"
   searchBox.disabled = false
+  echo "Json loaded!"
 
 ### Entry point for the whole .... thing
 proc onPageLoad() {.exportc.} =
-  informUser "Page has loaded!"
+  echo "Page has loaded!"
 
   searchBox = document.getElementById("searchBox").InputElement
   searchBox.disabled = true # Enabled when we load the Json

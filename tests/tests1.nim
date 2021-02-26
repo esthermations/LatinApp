@@ -1,5 +1,6 @@
 import unittest
-import WikiText
+import re
+import LatinWords/WikiText
 
 suite "getWords":
   test "Noun: spīritus":
