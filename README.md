@@ -1,4 +1,6 @@
 # LatinApp
+![](https://img.shields.io/badge/👑-Nim-FFE220)
+![](https://img.shields.io/badge/🏺-Lingua%20Latīna-B57EDC)
 
 ## Features
 
