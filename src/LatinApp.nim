@@ -27,7 +27,7 @@ func `$`(n: NounIdentifier): string =
   return fmt"{$n.c} {$n.n} of {$n.nomSing}"
 
 func `$`(v: VerbIdentifier): string =
-  return fmt"{$v.m} {$v.v} {$v.a} {$v.n} {$v.p} of {$v.firstPrincipalPart}"
+  return fmt"{$v.p} {$v.n} {$v.a} {$v.v} {$v.m} of {$v.firstPrincipalPart}"
 
 func toSearchResult(w: WordForm): SearchResult =
   case w.kind
@@ -83,16 +83,16 @@ proc searchTemplateAndUpdateCache(t: cstring): seq[SearchResult] =
     let key = getDictionaryForm(wordForms).deMacronise()
     echo "Key: ", $key
     if cachedResults.hasKey(key):
-      echo "returning cached results!"
+      echo "returning cached results:", $cachedResults[key]
       return cachedResults[key]
     else:
       echo "no cached results, returning nothing."
       return @[]
 
   for result in results:
-    echo "Working with result ", $result
     let key = result.word.deMacronise()
     if key.len > 0:
+      echo "Caching word: ", key
       if cachedResults.hasKey(key):
         cachedResults[key].add result
       else:
@@ -122,17 +122,23 @@ proc search(s: cstring): seq[SearchResult] =
 
   # No such template, and no such stored result, so try and guess a word form
   # and see if we have a template for that.
-  #if templates == nil:
-  #  let wf = guessWordForm($s)
-  #  if wf.len == 0:
-  #    return @[]
+  if templates == nil:
+    let wf = guessWordForm($s)
+    # Otherwise, we have a word! Maybe.
+    if wf.len > 0:
+      for w in wf:
+        let word = getDictionaryForm(w).deMacronise()
+        let dictionaryFormTemplates = wikitextTemplateJson{word}
+        if dictionaryFormTemplates != nil:
+          if templates == nil:
+            templates = %[]
+          for t in dictionaryFormTemplates:
+            # Update the cache with new words.
+            echo "Caching template: ", $t
+            discard searchTemplateAndUpdateCache(t.getStr())
 
-  #  # Otherwise, we have a word! Maybe.
-  #  for w in wf:
-  #    let word = getDictionaryForm(w).deMacronise()
-  #    let t = wikitextTemplateJson{word}
-  #    if t != nil:
-  #      templates &= t
+  if cachedResults.hasKey($s):
+    return cachedResults[$s]
 
   if templates != nil:
     var ret: seq[SearchResult]

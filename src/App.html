@@ -3,18 +3,38 @@
 
 <head>
   <style>
+    :root {
+      --box-min-width: 500px;
+    }
+
+    body {
+      background-color: darkgray;
+      font-size: 30pt;
+      font-family: serif;
+      font-variant-ligatures: historical-ligatures;
+    }
+
+    h1 {
+      font-size: 40pt;
+      font-family: inherit;
+    }
+
     .content {
+      position: absolute;
+      top: 5%;
+      left: calc(50% - 250px);
       max-width: 500px;
+      min-height: 500px;
+      padding: 25px;
+      border-radius: 20px;
       margin: auto;
       background-color: beige;
       text-align: center;
-    }
-
-    .contentBorder {
-      max-width: 520px;
-      margin: auto;
-      background-color: burlywood;
-      text-align: center;
+      box-shadow:
+        -10px -10px #420420,
+        -10px +10px #420420,
+        +10px -10px #420420,
+        +10px +10px #420420;
     }
 
     .button {
@@ -59,19 +79,8 @@
     .resultDesc {
       color: #999;
       font-size: 16pt;
+      font-style: italic;
       /* text-align: right; */
-    }
-
-    body {
-      background-color: gainsboro;
-      font-size: 30pt;
-      font-family: 'Libre Baskerville', sans-serif;
-      font-variant-ligatures: historical-ligatures;
-    }
-
-    h1 {
-      font-size: 40pt;
-      font-family: 'Libre Baskerville';
     }
   </style>
 
@@ -81,17 +90,15 @@
 </head>
 
 <body onload="onPageLoad();">
-  <div class="contentBorder">
-    <div class="content">
+  <div class="content">
 
-      <h1>&#x1F994;<br> Macronātrum Esthēris</h1>
+    <h1>&#x1F994;<br> Macronātrum Esthēris</h1>
 
-      <button class="button" id="loadButton" onclick="onLoadButtonPressed();">
-      </button>
-      <br>
-      <input type="text" id="searchBox" oninput="onSearchInput();"></input>
-      <div id="resultBox"></div>
-    </div>
+    <button class="button" id="loadButton" onclick="onLoadButtonPressed();">
+    </button>
+    <br>
+    <input type="text" id="searchBox" oninput="onSearchInput();"></input>
+    <div id="resultBox"></div>
   </div>
 </body>
 
