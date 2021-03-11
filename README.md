@@ -2,6 +2,8 @@
 ![](https://img.shields.io/badge/👑-Nim-FFE220)
 ![](https://img.shields.io/badge/🏺-Lingua%20Latīna-B57EDC)
 
+This is a web app written in Nim for rapidly displaying the correct macronisation of Latin words. So, for example, "amas" is correctly written "amās". When you type "amas", it will show you "amās" and what form of what word that is, really quickly. It should be helpful as a sort of spell-checker for typing Latin.
+
 ## Try it!
 
 I keep the latest version of this app running at https://esthermations.website/LatinApp.html
