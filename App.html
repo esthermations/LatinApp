@@ -19,6 +19,13 @@
       font-family: inherit;
     }
 
+    input {
+      width: 300px;
+      padding: 12px 20px;
+      margin: 20px 0 10px 0;
+      box-sizing: border-box;
+    }
+
     .content {
       position: absolute;
       top: 5%;
@@ -92,12 +99,15 @@
 <body onload="onPageLoad();">
   <div class="content">
 
-    <h1>&#x1F994;<br> Macronātrum Esthēris</h1>
+    <h1>&#x1F994;<br>Macronātrum Esthēris</h1>
 
-    <button class="button" id="loadButton" onclick="onLoadButtonPressed();">
-    </button>
-    <br>
-    <input type="text" id="searchBox" oninput="onSearchInput();"></input>
+    <div>
+      <button class="button" id="loadButton" onclick="onLoadButtonPressed();">
+      </button>
+    </div>
+    <div>
+      <input type="text" id="searchBox" oninput="onSearchInput();"></input>
+    </div>
     <div id="resultBox"></div>
   </div>
 </body>
