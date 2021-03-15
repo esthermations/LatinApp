@@ -23,11 +23,17 @@ var
   wikitextTemplateJson: JsonNode = nil
   cachedResults = initTable[string, seq[SearchResult]]()
 
+func wrapInWiktionaryLink(s: string): string =
+  let noMacrons = s.deMacronise()
+  return fmt"""<a href="https://en.wiktionary.org/wiki/{$noMacrons}#Latin" target="_blank">{$s}</a>"""
+
 func `$`(n: NounIdentifier): string =
-  return fmt"{$n.c} {$n.n} of {$n.nomSing}"
+  let nsLink = n.nomSing.wrapInWiktionaryLink()
+  return fmt"{$n.c} {$n.n} of {$nsLink}"
 
 func `$`(v: VerbIdentifier): string =
-  return fmt"{$v.p} {$v.n} {$v.a} {$v.v} {$v.m} of {$v.firstPrincipalPart}"
+  let fppLink = v.firstPrincipalPart.wrapInWiktionaryLink()
+  return fmt"{$v.p} {$v.n} {$v.a} {$v.v} {$v.m} of {$fppLink}"
 
 func toSearchResult(w: WordForm): SearchResult =
   case w.kind
