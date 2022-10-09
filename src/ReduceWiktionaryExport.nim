@@ -12,28 +12,29 @@ import
   os
 
 import
-  Util
+  util
 
 func getLatinSection(s: string): string =
   let idx = s.find("==Latin==")
   assert idx != -1
   let fin = s.find("----", start = idx)
   if fin == -1:
-    return s[idx ..< s.len]
+    s[idx ..< s.len]
   else:
-    return s[idx ..< fin]
+    s[idx ..< fin]
 
 proc hasLatinEntry(n: XmlNode): bool =
-  return n.getPageText().contains("==Latin==")
+  n.getPageText().contains("==Latin==")
 
 func shouldLoadPage(n: XmlNode): bool =
-  return n.hasLatinEntry() and
-         not n.getTitle().startsWith("Wiktionary:") and
-         not n.getTitle().startsWith("Reconstruction:")
+  n.hasLatinEntry() and
+    not n.getTitle().startsWith("Wiktionary:") and
+    not n.getTitle().startsWith("Reconstruction:")
 
 when isMainModule:
-  # Grabbed from a previous run on the same data
-  const numLatinPages = 808_502
+  # Grabbed from a previous run on the same data. Just used for calculating %
+  # complete - not actually functional.
+  const numLatinPages = 820_000
 
   let
     inPath = commandLineParams()[0]
@@ -67,7 +68,7 @@ when isMainModule:
           let
             pageTitle = page.getTitle()
             latinSection = page.getPageText().getLatinSection()
-            shouldDiscard: bool = latinSection.len == 0 or pageTitle.len == 0
+            shouldDiscard = latinSection.len == 0 or pageTitle.len == 0
 
           if not shouldDiscard:
             var

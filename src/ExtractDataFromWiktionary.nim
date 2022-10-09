@@ -30,14 +30,10 @@ proc getWordTemplates*(latinSection: string): seq[string] =
     "{{la-det|",
     # "{{la-det-form",
   ]
-  var ret: seq[string]
-  defer: return ret
   for line in latinSection.splitLines():
     for pattern in templatePatterns:
       if line.strip().startsWith(pattern):
-        ret.add line.strip()
-
-
+        result.add line.strip()
 
 when isMainModule:
   # Grabbed from a previous run on the same data

@@ -42,8 +42,8 @@ func toSearchResult(w: WordForm): SearchResult =
   else: return SearchResult(word: w.word, desc: "?")
 
 
-func wrapInDivClass(s: cstring, class: string): string =
-  fmt"""<div class="{class}">{$s}</div>"""
+func wrapInDivClass(s: string, class: string): string =
+  fmt"""<div class="{class}">{s}</div>"""
 
 func wordFormsToSearchResults(w: AllWordForms): seq[SearchResult] =
   let dictionaryForm = getDictionaryForm(w)
@@ -76,13 +76,13 @@ func wordFormsToSearchResults(w: AllWordForms): seq[SearchResult] =
 
 
 
-proc searchTemplateAndUpdateCache(t: cstring): seq[SearchResult] =
+proc searchTemplateAndUpdateCache(t: string): seq[SearchResult] =
   let
-    wordForms = getAllWordForms($t)
+    wordForms = getAllWordForms(t)
     results = wordFormsToSearchResults(wordForms)
 
   if wordForms.kind == WordKind.Unknown:
-    echo "Unknown word kind: ", $t
+    echo "Unknown word kind: ", t
     return @[]
 
   defer:
@@ -106,18 +106,18 @@ proc searchTemplateAndUpdateCache(t: cstring): seq[SearchResult] =
 
 
 ### Search our JSON data for the given string
-proc search(s: cstring): seq[SearchResult] =
+proc search(s: string): seq[SearchResult] =
   assert wikitextTemplateJson != nil
 
-  if cachedResults.hasKey($s):
-    echo "Returning cached result for ", $s
-    return cachedResults[$s]
+  if cachedResults.hasKey(s):
+    echo "Returning cached result for ", s
+    return cachedResults[s]
 
   # Otherwise, we need to create a result, if we can.
 
   # If this word matches a WikiText template, generate results from that
   # template.
-  var templates = wikitextTemplateJson{$s}
+  var templates = wikitextTemplateJson{s}
 
   echo (
     if templates == nil:
@@ -129,12 +129,13 @@ proc search(s: cstring): seq[SearchResult] =
   # No such template, and no such stored result, so try and guess a word form
   # and see if we have a template for that.
   if templates == nil:
-    let wf = guessWordForm($s)
+    let wf = guessWordForm(s)
     # Otherwise, we have a word! Maybe.
     if wf.len > 0:
       for w in wf:
-        let word = getDictionaryForm(w).deMacronise()
-        let dictionaryFormTemplates = wikitextTemplateJson{word}
+        let
+          word = getDictionaryForm(w).deMacronise()
+          dictionaryFormTemplates = wikitextTemplateJson{word}
         if dictionaryFormTemplates != nil:
           if templates == nil:
             templates = %[]
@@ -152,31 +153,33 @@ proc search(s: cstring): seq[SearchResult] =
       assert t != nil
       ret &= searchTemplateAndUpdateCache(t.getStr())
     return ret
+  @[]
 
-  return @[]
-
-func purifyInput(s: cstring): cstring =
-  multiReplace($s, ("æ", "ae")).cstring
-
+func purifyInput(s: cstring): string =
+  multiReplace($s, ("æ", "ae"))
 
 ### Perform a search whenever the user enters a letter into the search box
 proc onSearchInput() {.exportc.} =
   assert searchBox != nil
-  var searchString = searchBox.value.purifyInput()
-  var results = search(searchString)
+  let
+    searchString = searchBox.value.purifyInput()
+    results = search($searchString)
+
   resultBox.innerHTML = ""
+
   if results.len == 0:
     if searchString.len == 0:
       resultBox.innerHTML = defaultResult
     else:
-      resultBox.innerHTML = searchString.wrapInDivClass("noResult")
+      resultBox.innerHTML = searchString.wrapInDivClass("noResult").cstring
   else:
-    var previousWord = ""
+    var innerHtml, previousWord: string
     for result in results:
       if result.word != previousWord:
-        resultBox.innerHTML &= "<br>" & wrapInDivClass(result.word, "result")
-      resultBox.innerHTML &= wrapInDivClass(result.desc, "resultDesc")
+        innerHtml &= "<br>" & wrapInDivClass(result.word, "result")
+      innerHtml &= wrapInDivClass(result.desc, "resultDesc")
       previousWord = result.word
+    resultBox.innerHTML = innerHtml.cstring
 
 ### Parse JSON from the string in memory
 proc onLoadButtonPressed() {.exportc.} =
